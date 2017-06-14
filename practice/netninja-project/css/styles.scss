@@ -21,7 +21,7 @@
     display: block;
     text-align: center;
     &:hover {
-      background: #333;
+      background: lighten($deepBlue, 6);
     }
   }
 } // end of main nav
@@ -64,7 +64,7 @@ section h1 {
     color: $deepBlue;
     font-weight: bold;
     &:hover {
-      color: red;
+      color: complement($deepBlue);
     }
   }
   ul {
@@ -73,7 +73,7 @@ section h1 {
 }
 
 #projects li {
-
+  @include grid(6, 4%);
   img {
     width: 100%;
   }
