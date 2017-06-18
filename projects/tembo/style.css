@@ -1,6 +1,3 @@
-body {
-  background: #e6fffa; }
-
 .wrapper {
   width: 1200px;
   margin: 0 auto; }
@@ -19,10 +16,26 @@ body {
     font-size: 20px;
     font-family: sans-serif; }
     .topnav a:hover {
-      background-color: #ddd;
-      color: black; }
+      text-decoration: underline;
+      color: #f2f2f2; }
 
 .topnav .icon {
   display: none; }
+
+.topnav:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+main {
+  background-color: #4bc3cc;
+  height: 650px; }
+
+.sub-headings {
+  padding-top: 3%;
+  font-size: 36px; }
+
+.col1 {
+  width: 420px; }
 
 /*# sourceMappingURL=style.css.map */
