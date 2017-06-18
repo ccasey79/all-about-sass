@@ -49,6 +49,25 @@ main {
 .sub-headings {
   padding-top: 3%;
   font-size: 36px;
+  color: $whiteFont;
+  font-family: sans-serif;
+}
+
+#description {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: sans-serif;
+}
+
+button {
+  width: 260px;
+  height: 40px;
+  text-align: center;
+  background-color: #F47821;
+  color: $whiteFont;
+  font-size: 18px;
+  font-weight: 200;
+  border: none;
 }
 
 // columns
