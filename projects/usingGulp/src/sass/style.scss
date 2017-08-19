@@ -1,7 +1,15 @@
 
 
-$bgColor: #cccccc;
+$bgColor: #e6fffa;
 
 body {
   background-color: $bgColor;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+p {
+  font-style: italic;
 }

@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass');
+const browserSync = require('browser-sync');
 
 
 
@@ -42,14 +43,18 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('dist/css'));
 })
 
+// SASS BROWERSYNC
+
+gulp.task('sass-watch', ['sass'], browserSync.reload);
+
+
 // GULP TASKS ALTOGETHER
 
 gulp.task('default', ['message', 'copyHtml', 'imageMin', 'sass']);
 
 // GULP WATCH
 
-gulp.task('watch', function(){
-  gulp.watch();
+gulp.task('watch', function() {
   gulp.watch('src/images/*', ['imageMin']);
   gulp.watch('src/sass/*.scss', ['sass']);
   gulp.watch('src/*.html', ['copyHtml']);
