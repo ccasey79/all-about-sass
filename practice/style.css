@@ -1,4 +1,8 @@
-
 body {
-  background: #e6fffa;
-}
+  background: lightgreen; }
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic; }
+
+/*# sourceMappingURL=style.css.map */
